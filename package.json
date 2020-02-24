@@ -1,6 +1,6 @@
 {
     "name": "devt",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Setups up local dev-tools menu",
     "license": "MIT",
     "main": "build/index.js",
@@ -9,6 +9,11 @@
         "build": "webpack --mode production",
         "prepublish": "rm -rf ./build && npm run build"
     },
+    "author": "sdivelbiss",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sdivelbiss/devt"
+      },
     "devDependencies": {
         "@babel/core": "7.8.4",
         "@babel/plugin-proposal-class-properties": "7.8.3",
