@@ -1,3 +1,5 @@
+https://img.shields.io/npm/v/devt?style=for-the-badge
+
 # devt
 
 This tool allows you to install a custom dev-tools on your React application.

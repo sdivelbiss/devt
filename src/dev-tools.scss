@@ -1,7 +1,7 @@
 $base: #158EC6;
 $whiteLight: #fafafa;
 
-#dev-tools {
+#devt-dev-tools {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -21,48 +21,48 @@ $whiteLight: #fafafa;
       grid-template-rows: 25px 1fr;
       row-gap: 10px;
       z-index: 999;
-      .tools{
+      .devt-tools{
         display: flex;        
       }
-      #header {
+      #devt-header {
         border-bottom: 1px solid #e6e6b5;
-        .header-title {
+        .devt-header-title {
           display: inline-block;
         }
-        .refresh {
+        .devt-refresh {
           display: block;
         }
       }
       
     }
-    #header {
+    #devt-header {
       display: grid;
       grid-template-columns: 50% 50%;
       font-size: 1.2rem;      
 
-      .header-title {
+      .devt-header-title {
         display: none;
       }
-      .refresh {
+      .devt-refresh {
         display: none;
         justify-self: flex-end;
         cursor: pointer;
       }
     }
     
-    .tools {
+    .devt-tools {
       display: none;
       flex-direction: column;
       flex-wrap: wrap;
       height: 225px;
       padding: 0 10px;
 
-      .feature {
+      .devt-feature {
         label {
           display: inline-block;
           margin: 0.5rem 0;
         }
-        .toggle {
+        .devt-toggle {
           cursor: pointer;
           display:inline-block;
           -webkit-appearance:none;

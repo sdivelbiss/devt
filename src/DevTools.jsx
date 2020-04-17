@@ -13,10 +13,10 @@ const Feature = ({f}) => {
   }, [feature]);
 
   return (
-    <div className={`feature feature-${f}`}>
+    <div className={`devt-feature devt-feature-${f}`}>
       <label>
         {f}:{' '}
-        <input type="checkbox" className={'toggle'} checked={feature} onChange={e => setFeature(e.target.checked)} />
+        <input type="checkbox" className={'devt-toggle'} checked={feature} onChange={e => setFeature(e.target.checked)} />
       </label>
     </div>
   )
@@ -24,19 +24,19 @@ const Feature = ({f}) => {
 
 const DevTools = ({features}) => {
     return (
-      <div id="dev-tools">
-        <header id={'header'}>
+      <div id="devt-dev-tools">
+        <header id={'devt-header'}>
           <div>
-            <span className={'header-title'}>
+            <span className={'devt-header-title'}>
               Local Dev
             </span> 
             🛠
           </div>
-          <div className={'refresh'} onClick={() => window.location.reload()}>
+          <div className={'devt-refresh'} onClick={() => window.location.reload()}>
             🔄
           </div>
         </header>
-        <div className="tools">
+        <div className="devt-tools">
           {features.map(f => (
             <Feature key={f} f={f}/>
           ))}
